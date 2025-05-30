@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/sonner";
 import "@livekit/components-styles";
 import { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`h-full ${publicSans400.className}`}>
       <body className="h-full">{children}</body>
+      <Toaster />
     </html>
   );
 }
