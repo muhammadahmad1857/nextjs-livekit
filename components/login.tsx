@@ -37,6 +37,12 @@ import { toast } from "sonner";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 export function LoginForm() {
@@ -119,7 +125,7 @@ export function LoginForm() {
         email: email,
         password: password,
       });
-      toast.success(resp.data.message, { richColors: true });
+      toast.success(resp.data || "login successful", { richColors: true });
       router.push("/");
     } catch (error: any) {
       console.error(error);
