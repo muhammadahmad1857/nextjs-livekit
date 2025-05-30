@@ -19,6 +19,9 @@ import { toast } from "sonner";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 export function LoginForm() {
@@ -102,7 +105,7 @@ export function LoginForm() {
         password: password,
       });
       toast.success(resp.data.message, { richColors: true });
-      router.refresh();
+      router.push("/");
     } catch (error: any) {
       console.error(error);
       toast.error(error.response.data.detail || "Failed to login. Please try again later.", {
