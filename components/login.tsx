@@ -31,6 +31,9 @@ import { toast } from "sonner";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 export function LoginForm() {
@@ -129,10 +132,10 @@ export function LoginForm() {
   return (
     <>
       <motion.div
-        // initial={{ opacity: 0, x: -20 }}
-        // animate={{ opacity: 1, x: 0 }}
-        // exit={{ opacity: 0, x: 20 }}
-        // transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
+      // initial={{ opacity: 0, x: -20 }}
+      // animate={{ opacity: 1, x: 0 }}
+      // exit={{ opacity: 0, x: 20 }}
+      // transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
       >
         <form onSubmit={handleSubmit}>
           <div className="space-y-4">
@@ -191,7 +194,7 @@ export function LoginForm() {
             </div>
             <Button
               type="submit"
-              className="w-full cursor-pointer"
+              className="w-full bg-white cursor-pointer"
               variant={"ghost"}
               disabled={loading}
             >
