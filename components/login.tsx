@@ -22,6 +22,21 @@ import { toast } from "sonner";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 export function LoginForm() {
@@ -126,7 +141,7 @@ export function LoginForm() {
         transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
       >
         <form onSubmit={handleSubmit}>
-          <div className="space-y-4">
+          <div className="space-y-4 bg-white text-black">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <div className="relative">
@@ -180,7 +195,12 @@ export function LoginForm() {
               </div>
               {errors.password && <p className="text-sm text-red-600 mt-1">{errors.password}</p>}
             </div>
-            <Button type="submit" className="w-full cursor-pointer" disabled={loading}>
+            <Button
+              type="submit"
+              className="w-full cursor-pointer"
+              // variant={"ghost"}
+              disabled={loading}
+            >
               {loading ? "Loading..." : "Sign In"}
             </Button>
           </div>
