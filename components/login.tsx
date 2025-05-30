@@ -34,6 +34,9 @@ import { toast } from "sonner";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 export function LoginForm() {
@@ -194,7 +197,7 @@ export function LoginForm() {
             </div>
             <Button
               type="submit"
-              className="w-full bg-white cursor-pointer"
+              className="w-full bg-white text-black cursor-pointer"
               variant={"ghost"}
               disabled={loading}
             >
