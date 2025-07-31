@@ -27,6 +27,10 @@
   position: relative;
   background: radial-gradient(11.2px,currentColor 94%,#0000);
 }
+::selection{
+  background-color: #EA543D;
+  color:white;
+}
 
 .loader:before {
   content: '';
