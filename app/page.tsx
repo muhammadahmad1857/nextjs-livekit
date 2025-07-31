@@ -187,7 +187,9 @@ export default function Page() {
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
           We&apos;re working hard to bring you something amazing. Stay tuned!
         </p>
-        <div className="loader"></div>
+        <div className="flex justify-center items-center">
+          <div className="loader"></div>
+        </div>
       </div>
     </div>
   );
