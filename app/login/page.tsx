@@ -1,6 +1,7 @@
 import { LoginForm } from "@/components/login";
 
 const Login = () => {
+  console.log("Next.js process.version:", process.version);
   return (
     <div
       data-lk-theme="default"
