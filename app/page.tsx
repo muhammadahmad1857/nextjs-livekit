@@ -185,7 +185,7 @@ export default function Page() {
       <div className="text-center space-y-6 p-8">
         <h1 className="text-4xl md:text-6xl font-bold animate-fade-in">Under Development</h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          We're working hard to bring you something amazing. Stay tuned!
+          We&apos;re working hard to bring you something amazing. Stay tuned!
         </p>
         <div className="loader"></div>
       </div>
