@@ -2,21 +2,21 @@ import { NextRequest, NextResponse } from 'next/server'
 
 
 export function middleware(request: NextRequest): NextResponse {
-  const isLoggedIn = request.cookies.get('session')?.value === 'true'
+  // const isLoggedIn = request.cookies.get('session')?.value === 'true'
 
 
-  // Get the current pathname from the request URL
-  const pathname = request.nextUrl.pathname;
+  // // Get the current pathname from the request URL
+  // const pathname = request.nextUrl.pathname;
 
-  // Logged-in users cannot access /auth or its subpages
-  if (isLoggedIn && pathname==="/login") {
-    return NextResponse.redirect(new URL('/', request.url));
-  }
+  // // Logged-in users cannot access /auth or its subpages
+  // if (isLoggedIn && pathname==="/login") {
+  //   return NextResponse.redirect(new URL('/', request.url));
+  // }
 
-  // Not logged-in users can only access /auth or its subpages
-  if (!isLoggedIn && pathname !== "/login") {
-    return NextResponse.redirect(new URL('/login', request.url));
-  }
+  // // Not logged-in users can only access /auth or its subpages
+  // if (!isLoggedIn && pathname !== "/login") {
+  //   return NextResponse.redirect(new URL('/login', request.url));
+  // }
 
   // Allow the request to proceed for all other cases
   return NextResponse.next();
